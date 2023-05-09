@@ -107,8 +107,8 @@ switch(0) {
         document.getElementsByClassName("look_for")[0].innerText = document.getElementsByClassName("look_for")[0].innerText + " " + (Tm.getHours() + 6) + '\:' + rop;
         break
                     
-    case document.getElementsByClassName("look_for")[0].innerText.search("Пермь1"):
-        document.getElementsByClassName("look_for")[0].innerText = document.getElementsByClassName("look_for")[0].innerText + " " + (Tm.getHours() + 1) + '\:' + rop;
+    case document.getElementsByClassName("look_for")[0].innerText.search("Новосибирск"):
+        document.getElementsByClassName("look_for")[0].innerText = document.getElementsByClassName("look_for")[0].innerText + " " + (Tm.getHours() + 3) + '\:' + rop;
         break
                       
     case document.getElementsByClassName("look_for")[0].innerText.search("Пермь2"):
