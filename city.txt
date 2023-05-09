@@ -1,3 +1,8 @@
 {
-	Moskow:"10:15",
+  "name": "zamen",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index"
 }
