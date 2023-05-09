@@ -1,5 +1,5 @@
 switch(0) {
-    case gor.search("Лучегорск"):  // if (x === 'value1')
+    case document.getElementsByClassName("look_for")[0].innerText.search("Лучегорск"):  // if (x === 'value1')
       alert("Ok");
       break
   
