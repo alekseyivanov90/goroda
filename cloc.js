@@ -1,4 +1,4 @@
-let rop;
+let rop, jamm;
 
 if(Tm.getMinutes() < 10){
 	rop = " 0"+ Tm.getMinutes();
@@ -128,7 +128,11 @@ switch(0) {
         break
         
     case document.getElementsByClassName("look_for")[0].innerText.search("Иркутск"):
-        document.getElementsByClassName("look_for")[0].innerText = document.getElementsByClassName("look_for")[0].innerText + " " + (Tm.getHours() + 4) + '\:' + rop;
+        jamm = Tm.getHours() + 4
+        if(jamm > 24){
+            jamm = jamm - 24
+        }
+        document.getElementsByClassName("look_for")[0].innerText = document.getElementsByClassName("look_for")[0].innerText + " " + (jamm + 4) + '\:' + rop;
         break
 
       default:
