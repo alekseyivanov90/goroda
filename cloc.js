@@ -7,8 +7,8 @@ if(Tm.getMinutes() < 10){
 }
 
 switch(0) {
-    case document.getElementsByClassName("look_for")[0].innerText.search("Лучегорск"):  // if (x === 'value1')
-      document.getElementsByClassName("look_for")[0].innerText = document.getElementsByClassName("look_for")[0].innerText + " " + (Tm.getHours() - 1) + ":" + rop;
+    case document.getElementsByClassName("look_for")[0].innerText.search("Лучегорск"):
+      document.getElementsByClassName("look_for")[0].innerText = document.getElementsByClassName("look_for")[0].innerText + " " + (Tm.getHours() - 1) + ':' + rop;
       break
   
     case 'value2':  // if (x === 'value2')
