@@ -10,9 +10,9 @@ switch(0) {
     case document.getElementsByClassName("look_for")[0].innerText.search("Лучегорск"):
       document.getElementsByClassName("look_for")[0].innerText = document.getElementsByClassName("look_for")[0].innerText + " " + (Tm.getHours() + 6) + '\:' + rop;
       break
-  
-    case 'value2':  // if (x === 'value2')
-      // sds
+
+    case document.getElementsByClassName("look_for")[0].innerText.search("Заволжье"):
+      document.getElementsByClassName("look_for")[0].innerText = document.getElementsByClassName("look_for")[0].innerText + " " + (Tm.getHours() - 1) + '\:' + rop;
       break
   
     default:
