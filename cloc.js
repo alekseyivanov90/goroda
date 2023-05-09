@@ -123,6 +123,10 @@ switch(0) {
         document.getElementsByClassName("look_for")[0].innerText = document.getElementsByClassName("look_for")[0].innerText + " " + (Tm.getHours()) + '\:' + rop;
         break
 
+    case document.getElementsByClassName("look_for")[0].innerText.search("Нижний Новгород"):
+        document.getElementsByClassName("look_for")[0].innerText = document.getElementsByClassName("look_for")[0].innerText + " " + (Tm.getHours() - 1) + '\:' + rop;
+        break
+
     default:
       // asda
       break
