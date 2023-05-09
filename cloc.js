@@ -126,8 +126,12 @@ switch(0) {
     case document.getElementsByClassName("look_for")[0].innerText.search("Нижний Новгород"):
         document.getElementsByClassName("look_for")[0].innerText = document.getElementsByClassName("look_for")[0].innerText + " " + (Tm.getHours() - 1) + '\:' + rop;
         break
+        
+    case document.getElementsByClassName("look_for")[0].innerText.search("Иркутск"):
+        document.getElementsByClassName("look_for")[0].innerText = document.getElementsByClassName("look_for")[0].innerText + " " + (Tm.getHours() + 4) + '\:' + rop;
+        break
 
-    default:
+      default:
       // asda
       break
   }
