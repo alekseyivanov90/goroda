@@ -356,7 +356,7 @@ switch(0) {
         break
 
     case document.getElementsByClassName("look_for")[0].innerText.search("Мирный"):
-        jamm = Tm.getHours() + 4
+        jamm = Tm.getHours() + 5
         if(jamm > 24){
             jamm = jamm - 24
         }
