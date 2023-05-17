@@ -477,7 +477,7 @@ switch(0) {
 		
     case document.getElementsByClassName("look_for")[0].innerText.search("Канск"):
         jamm = Tm.getHours() + 3
-        if(jamm > 24){
+        if(jamm >= 24){
             jamm = jamm - 24
         }
         document.getElementsByClassName("look_for")[0].innerText = document.getElementsByClassName("look_for")[0].innerText + " " + (jamm) + '\:' + rop;
