@@ -46,6 +46,14 @@ switch(0) {
         }
         document.getElementsByClassName("look_for")[0].innerText = document.getElementsByClassName("look_for")[0].innerText + " " + (jamm) + '\:' + rop;
         break
+		
+    case document.getElementsByClassName("look_for")[0].innerText.search("Лазаревское"):
+        jamm = Tm.getHours() - 1
+        if(jamm > 24){
+            jamm = jamm - 24
+        }
+        document.getElementsByClassName("look_for")[0].innerText = document.getElementsByClassName("look_for")[0].innerText + " " + (jamm) + '\:' + rop;
+        break
             
     case document.getElementsByClassName("look_for")[0].innerText.search("Альметьевск"):
         jamm = Tm.getHours() - 1
@@ -461,6 +469,14 @@ switch(0) {
 		
     case document.getElementsByClassName("look_for")[0].innerText.search("Феодосия"):
         jamm = Tm.getHours() - 1
+        if(jamm > 24){
+            jamm = jamm - 24
+        }
+        document.getElementsByClassName("look_for")[0].innerText = document.getElementsByClassName("look_for")[0].innerText + " " + (jamm) + '\:' + rop;
+        break
+		
+    case document.getElementsByClassName("look_for")[0].innerText.search("Канск"):
+        jamm = Tm.getHours() + 3
         if(jamm > 24){
             jamm = jamm - 24
         }
