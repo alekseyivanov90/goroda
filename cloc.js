@@ -1,7 +1,5 @@
 let rop, jamm;
 
-// primer
-
 if(Tm.getMinutes() < 10){
 	rop = " 0"+ Tm.getMinutes();
 }else{
@@ -518,6 +516,38 @@ switch(0) {
         break
 		
     case document.getElementsByClassName("look_for")[0].innerText.search("Ступино"):
+        jamm = Tm.getHours() - 1
+        if(jamm >= 24){
+            jamm = jamm - 24
+        }
+        document.getElementsByClassName("look_for")[0].innerText = document.getElementsByClassName("look_for")[0].innerText + " " + (jamm) + '\:' + rop;
+        break
+		
+    case document.getElementsByClassName("look_for")[0].innerText.search("Сыктывкар"):
+        jamm = Tm.getHours() - 1
+        if(jamm >= 24){
+            jamm = jamm - 24
+        }
+        document.getElementsByClassName("look_for")[0].innerText = document.getElementsByClassName("look_for")[0].innerText + " " + (jamm) + '\:' + rop;
+        break
+		
+    case document.getElementsByClassName("look_for")[0].innerText.search("Петрозаводск"):
+        jamm = Tm.getHours() - 1
+        if(jamm >= 24){
+            jamm = jamm - 24
+        }
+        document.getElementsByClassName("look_for")[0].innerText = document.getElementsByClassName("look_for")[0].innerText + " " + (jamm) + '\:' + rop;
+        break
+		
+    case document.getElementsByClassName("look_for")[0].innerText.search("Владимир"):
+        jamm = Tm.getHours() - 1
+        if(jamm >= 24){
+            jamm = jamm - 24
+        }
+        document.getElementsByClassName("look_for")[0].innerText = document.getElementsByClassName("look_for")[0].innerText + " " + (jamm) + '\:' + rop;
+        break
+		
+    case document.getElementsByClassName("look_for")[0].innerText.search("Псков"):
         jamm = Tm.getHours() - 1
         if(jamm >= 24){
             jamm = jamm - 24
