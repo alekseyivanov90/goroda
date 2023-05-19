@@ -1,5 +1,7 @@
 let rop, jamm;
 
+// primer
+
 if(Tm.getMinutes() < 10){
 	rop = " 0"+ Tm.getMinutes();
 }else{
