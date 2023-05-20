@@ -651,6 +651,70 @@ switch(0) {
         document.getElementsByClassName("look_for")[0].innerText = document.getElementsByClassName("look_for")[0].innerText + " " + (jamm) + '\:' + rop;
         break
 		
+    case document.getElementsByClassName("look_for")[0].innerText.search("Комсомольск-на-Амуре"):
+        jamm = Tm.getHours() + 6
+        if(jamm >= 24){
+            jamm = jamm - 24
+        }
+        document.getElementsByClassName("look_for")[0].innerText = document.getElementsByClassName("look_for")[0].innerText + " " + (jamm) + '\:' + rop;
+        break
+		
+    case document.getElementsByClassName("look_for")[0].innerText.search("Калуга"):
+        jamm = Tm.getHours() - 1
+        if(jamm >= 24){
+            jamm = jamm - 24
+        }
+        document.getElementsByClassName("look_for")[0].innerText = document.getElementsByClassName("look_for")[0].innerText + " " + (jamm) + '\:' + rop;
+        break
+		
+    case document.getElementsByClassName("look_for")[0].innerText.search("Новохоперск"):
+        jamm = Tm.getHours() - 1
+        if(jamm >= 24){
+            jamm = jamm - 24
+        }
+        document.getElementsByClassName("look_for")[0].innerText = document.getElementsByClassName("look_for")[0].innerText + " " + (jamm) + '\:' + rop;
+        break
+		
+    case document.getElementsByClassName("look_for")[0].innerText.search("Гусев"):
+        jamm = Tm.getHours() - 2
+        if(jamm >= 24){
+            jamm = jamm - 24
+        }
+        document.getElementsByClassName("look_for")[0].innerText = document.getElementsByClassName("look_for")[0].innerText + " " + (jamm) + '\:' + rop;
+        break
+		
+    case document.getElementsByClassName("look_for")[0].innerText.search("Биробиджан"):
+        jamm = Tm.getHours() + 6
+        if(jamm >= 24){
+            jamm = jamm - 24
+        }
+        document.getElementsByClassName("look_for")[0].innerText = document.getElementsByClassName("look_for")[0].innerText + " " + (jamm) + '\:' + rop;
+        break
+		
+    case document.getElementsByClassName("look_for")[0].innerText.search("Южно-Сахалинск"):
+        jamm = Tm.getHours() + 7
+        if(jamm >= 24){
+            jamm = jamm - 24
+        }
+        document.getElementsByClassName("look_for")[0].innerText = document.getElementsByClassName("look_for")[0].innerText + " " + (jamm) + '\:' + rop;
+        break
+		
+    case document.getElementsByClassName("look_for")[0].innerText.search("Мордово"):
+        jamm = Tm.getHours() - 1
+        if(jamm >= 24){
+            jamm = jamm - 24
+        }
+        document.getElementsByClassName("look_for")[0].innerText = document.getElementsByClassName("look_for")[0].innerText + " " + (jamm) + '\:' + rop;
+        break
+		
+    case document.getElementsByClassName("look_for")[0].innerText.search("Красногородское"):
+        jamm = Tm.getHours() - 1
+        if(jamm >= 24){
+            jamm = jamm - 24
+        }
+        document.getElementsByClassName("look_for")[0].innerText = document.getElementsByClassName("look_for")[0].innerText + " " + (jamm) + '\:' + rop;
+        break
+		
       default:
       // asda
       break
