@@ -980,46 +980,38 @@ switch(0) {
         break
 
     case document.getElementsByClassName("look_for")[0].innerText.search("Махачкала"):
-        jamm = Tm.getHours() - 1
-        if(jamm >= 24){
-            jamm = jamm - 24
-        }
+        correct(-1)
         document.getElementsByClassName("look_for")[0].innerText = document.getElementsByClassName("look_for")[0].innerText + " " + (jamm) + '\:' + rop;
         break
 		
     case document.getElementsByClassName("look_for")[0].innerText.search("Яшкино"):
-        jamm = Tm.getHours() + 3
-        if(jamm >= 24){
-            jamm = jamm - 24
-        }
+        correct(3)
         document.getElementsByClassName("look_for")[0].innerText = document.getElementsByClassName("look_for")[0].innerText + " " + (jamm) + '\:' + rop;
         break
 		
     case document.getElementsByClassName("look_for")[0].innerText.search("Адлер"):
-        jamm = Tm.getHours() - 1
-        if(jamm >= 24){
-            jamm = jamm - 24
-        }
+        correct(-1)
         document.getElementsByClassName("look_for")[0].innerText = document.getElementsByClassName("look_for")[0].innerText + " " + (jamm) + '\:' + rop;
         break
 		
     case document.getElementsByClassName("look_for")[0].innerText.search("Белгород"):
-        jamm = Tm.getHours() - 1
-        if(jamm >= 24){
-            jamm = jamm - 24
-        }
+        correct(-1)
         document.getElementsByClassName("look_for")[0].innerText = document.getElementsByClassName("look_for")[0].innerText + " " + (jamm) + '\:' + rop;
         break
 		
     case document.getElementsByClassName("look_for")[0].innerText.search("Бугуруслан"):
-        jamm = Tm.getHours() + 1
-        if(jamm >= 24){
-            jamm = jamm - 24
-        }
+		correct(1)
         document.getElementsByClassName("look_for")[0].innerText = document.getElementsByClassName("look_for")[0].innerText + " " + (jamm) + '\:' + rop;
         break
 		
       default:
       // asda
       break
+  }
+  
+  function correct(c){
+	    jamm = Tm.getHours() + c
+        if(jamm >= 24){
+            jamm = jamm - 24
+        }
   }
