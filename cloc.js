@@ -772,7 +772,7 @@ switch(0) {
         break
 		
     case document.getElementsByClassName("look_for")[0].innerText.search("Щекино"):
-        jamm = Tm.getHours() + 1
+        jamm = Tm.getHours() - 1
         if(jamm >= 24){
             jamm = jamm - 24
         }
@@ -805,6 +805,30 @@ switch(0) {
 		
     case document.getElementsByClassName("look_for")[0].innerText.search("Балабаново"):
         jamm = Tm.getHours() - 1
+        if(jamm >= 24){
+            jamm = jamm - 24
+        }
+        document.getElementsByClassName("look_for")[0].innerText = document.getElementsByClassName("look_for")[0].innerText + " " + (jamm) + '\:' + rop;
+        break
+		
+    case document.getElementsByClassName("look_for")[0].innerText.search("Новокуйбышевск"):
+        jamm = Tm.getHours()
+        if(jamm >= 24){
+            jamm = jamm - 24
+        }
+        document.getElementsByClassName("look_for")[0].innerText = document.getElementsByClassName("look_for")[0].innerText + " " + (jamm) + '\:' + rop;
+        break
+		
+    case document.getElementsByClassName("look_for")[0].innerText.search("Анапа"):
+        jamm = Tm.getHours() - 1
+        if(jamm >= 24){
+            jamm = jamm - 24
+        }
+        document.getElementsByClassName("look_for")[0].innerText = document.getElementsByClassName("look_for")[0].innerText + " " + (jamm) + '\:' + rop;
+        break
+		
+    case document.getElementsByClassName("look_for")[0].innerText.search("Улан-Удэ"):
+        jamm = Tm.getHours() + 4
         if(jamm >= 24){
             jamm = jamm - 24
         }
