@@ -755,8 +755,56 @@ switch(0) {
         document.getElementsByClassName("look_for")[0].innerText = document.getElementsByClassName("look_for")[0].innerText + " " + (jamm) + '\:' + rop;
         break
 		
-    case document.getElementsByClassName("look_for")[0].innerText.search("Благовещенск"):
-        jamm = Tm.getHours() + 5
+    case document.getElementsByClassName("look_for")[0].innerText.search("Артем"):
+        jamm = Tm.getHours() + 6
+        if(jamm >= 24){
+            jamm = jamm - 24
+        }
+        document.getElementsByClassName("look_for")[0].innerText = document.getElementsByClassName("look_for")[0].innerText + " " + (jamm) + '\:' + rop;
+        break
+		
+    case document.getElementsByClassName("look_for")[0].innerText.search("Полевской"):
+        jamm = Tm.getHours() + 1
+        if(jamm >= 24){
+            jamm = jamm - 24
+        }
+        document.getElementsByClassName("look_for")[0].innerText = document.getElementsByClassName("look_for")[0].innerText + " " + (jamm) + '\:' + rop;
+        break
+		
+    case document.getElementsByClassName("look_for")[0].innerText.search("Щекино"):
+        jamm = Tm.getHours() + 1
+        if(jamm >= 24){
+            jamm = jamm - 24
+        }
+        document.getElementsByClassName("look_for")[0].innerText = document.getElementsByClassName("look_for")[0].innerText + " " + (jamm) + '\:' + rop;
+        break
+		
+    case document.getElementsByClassName("look_for")[0].innerText.search("Горно-Алтайск"):
+        jamm = Tm.getHours() + 3
+        if(jamm >= 24){
+            jamm = jamm - 24
+        }
+        document.getElementsByClassName("look_for")[0].innerText = document.getElementsByClassName("look_for")[0].innerText + " " + (jamm) + '\:' + rop;
+        break
+		
+    case document.getElementsByClassName("look_for")[0].innerText.search("Первоуральск"):
+        jamm = Tm.getHours() + 1
+        if(jamm >= 24){
+            jamm = jamm - 24
+        }
+        document.getElementsByClassName("look_for")[0].innerText = document.getElementsByClassName("look_for")[0].innerText + " " + (jamm) + '\:' + rop;
+        break
+		
+    case document.getElementsByClassName("look_for")[0].innerText.search("Ростов-на-Дону"):
+        jamm = Tm.getHours() - 1
+        if(jamm >= 24){
+            jamm = jamm - 24
+        }
+        document.getElementsByClassName("look_for")[0].innerText = document.getElementsByClassName("look_for")[0].innerText + " " + (jamm) + '\:' + rop;
+        break
+		
+    case document.getElementsByClassName("look_for")[0].innerText.search("Балабаново"):
+        jamm = Tm.getHours() - 1
         if(jamm >= 24){
             jamm = jamm - 24
         }
