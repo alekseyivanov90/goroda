@@ -681,6 +681,46 @@ switch(0) {
         document.getElementsByClassName("look_for")[0].innerText = document.getElementsByClassName("look_for")[0].innerText + " " + (jamm) + '\:' + rop;
         break
 		
+    case document.getElementsByClassName("look_for")[0].innerText.search("Бишкек"):
+		correct(2)
+        document.getElementsByClassName("look_for")[0].innerText = document.getElementsByClassName("look_for")[0].innerText + " " + (jamm) + '\:' + rop;
+        break
+		
+    case document.getElementsByClassName("look_for")[0].innerText.search("Ала-Бука"):
+		correct(2)
+        document.getElementsByClassName("look_for")[0].innerText = document.getElementsByClassName("look_for")[0].innerText + " " + (jamm) + '\:' + rop;
+        break
+		
+    case document.getElementsByClassName("look_for")[0].innerText.search("Дмитров"):
+		correct(-1)
+        document.getElementsByClassName("look_for")[0].innerText = document.getElementsByClassName("look_for")[0].innerText + " " + (jamm) + '\:' + rop;
+        break
+		
+    case document.getElementsByClassName("look_for")[0].innerText.search("Тогучин"):
+		correct(3)
+        document.getElementsByClassName("look_for")[0].innerText = document.getElementsByClassName("look_for")[0].innerText + " " + (jamm) + '\:' + rop;
+        break
+		
+    case document.getElementsByClassName("look_for")[0].innerText.search("Барабинск"):
+		correct(3)
+        document.getElementsByClassName("look_for")[0].innerText = document.getElementsByClassName("look_for")[0].innerText + " " + (jamm) + '\:' + rop;
+        break
+		
+    case document.getElementsByClassName("look_for")[0].innerText.search("Всеволожск"):
+		correct(-1)
+        document.getElementsByClassName("look_for")[0].innerText = document.getElementsByClassName("look_for")[0].innerText + " " + (jamm) + '\:' + rop;
+        break
+		
+    case document.getElementsByClassName("look_for")[0].innerText.search("Тихорецк"):
+		correct(-1)
+        document.getElementsByClassName("look_for")[0].innerText = document.getElementsByClassName("look_for")[0].innerText + " " + (jamm) + '\:' + rop;
+        break
+		
+    case document.getElementsByClassName("look_for")[0].innerText.search("Абакан"):
+		correct(3)
+        document.getElementsByClassName("look_for")[0].innerText = document.getElementsByClassName("look_for")[0].innerText + " " + (jamm) + '\:' + rop;
+        break
+		
       default:
       // asda
       break
