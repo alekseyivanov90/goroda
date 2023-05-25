@@ -861,6 +861,21 @@ switch(0) {
         document.getElementsByClassName("look_for")[0].innerText = document.getElementsByClassName("look_for")[0].innerText + " " + (jamm) + '\:' + rop;
         break
 		
+    case document.getElementsByClassName("look_for")[0].innerText.search("Баку"):
+		correct(0)
+        document.getElementsByClassName("look_for")[0].innerText = document.getElementsByClassName("look_for")[0].innerText + " " + (jamm) + '\:' + rop;
+        break
+		
+    case document.getElementsByClassName("look_for")[0].innerText.search("Ногинск"):
+		correct(-1)
+        document.getElementsByClassName("look_for")[0].innerText = document.getElementsByClassName("look_for")[0].innerText + " " + (jamm) + '\:' + rop;
+        break
+		
+    case document.getElementsByClassName("look_for")[0].innerText.search("Югорск"):
+		correct(1)
+        document.getElementsByClassName("look_for")[0].innerText = document.getElementsByClassName("look_for")[0].innerText + " " + (jamm) + '\:' + rop;
+        break
+		
       default:
       // asda
       break
