@@ -195,9 +195,8 @@ switch(0) {
 		
     case document.getElementsByClassName("look_for")[0].innerText.search("Симферополь"):
         
-		
-		document.getElementsByClassName("look_for")[0].innerText = document.getElementsByClassName("look_for")[0].innerText + " " + (jamm) + '\:' + rop;
 		correct(-1)
+		document.getElementsByClassName("look_for")[0].innerText = document.getElementsByClassName("look_for")[0].innerText + " " + (jamm) + '\:' + rop;
         
 		// document.getElementsByClassName("user-town")[0].innerText = document.getElementsByClassName("user-town")[0].innerText + " " + (jamm) + '\:' + rop;
         break
@@ -956,6 +955,12 @@ switch(0) {
 		
     case document.getElementsByClassName("look_for")[0].innerText.search("Русский"):
 		correct(6)
+		// document.getElementsByClassName("user-town")[0].innerText = document.getElementsByClassName("user-town")[0].innerText + " " + (jamm) + '\:' + rop;
+        document.getElementsByClassName("look_for")[0].innerText = document.getElementsByClassName("look_for")[0].innerText + " " + (jamm) + '\:' + rop;
+        break
+		
+    case document.getElementsByClassName("look_for")[0].innerText.search("Каменск-Шахтинский"):
+		correct(-1)
 		// document.getElementsByClassName("user-town")[0].innerText = document.getElementsByClassName("user-town")[0].innerText + " " + (jamm) + '\:' + rop;
         document.getElementsByClassName("look_for")[0].innerText = document.getElementsByClassName("look_for")[0].innerText + " " + (jamm) + '\:' + rop;
         break
