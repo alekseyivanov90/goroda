@@ -508,10 +508,9 @@ switch(0) {
         break
 		
     case document.getElementsByClassName("look_for")[0].innerText.search("Ростов-на-Дону"):
-        
+        correct(-1)
 		document.getElementsByClassName("look_for")[0].innerText = document.getElementsByClassName("look_for")[0].innerText + " " + (jamm) + '\:' + rop;
-		correct(-1)
-        
+		
 		// document.getElementsByClassName("user-town")[0].innerText = document.getElementsByClassName("user-town")[0].innerText + " " + (jamm) + '\:' + rop;
         break
 		
