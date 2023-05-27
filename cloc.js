@@ -819,6 +819,10 @@ switch(0) {
 		correct(3)
         break
 		
+    case document.getElementsByClassName("look_for")[0].innerText.search("Сергиев Посад"):
+		correct(-1)
+        brea
+		
       default:
       // aas
       break
