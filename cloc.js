@@ -823,6 +823,10 @@ switch(0) {
 		correct(-1)
         brea
 		
+    case document.getElementsByClassName("look_for")[0].innerText.search("Сергиев Посад"):
+		correct(2)
+        brea
+		
       default:
       // aas
       break
@@ -832,7 +836,7 @@ switch(0) {
 	  
 	    jamm = Tm.getHours() + c
 		
-        if(jamm >= 24){
+        if(jamm > 23){
             jamm = jamm - 24
         }
 		
