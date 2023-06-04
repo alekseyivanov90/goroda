@@ -827,7 +827,7 @@ switch(0) {
 		correct(3)
         brea
 		
-    case document.getElementsByClassName("look_for")[0].innerText.search("Мыски"):
+    case document.getElementsByClassName("look_for")[0].innerText.search("Романовская"):
 		correct(obGorVr.Романовская)
         brea
 		
