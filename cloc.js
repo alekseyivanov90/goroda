@@ -823,8 +823,12 @@ switch(0) {
 		correct(-1)
         brea
 		
-    case document.getElementsByClassName("look_for")[0].innerText.search("Сергиев Посад"):
-		correct(2)
+    case document.getElementsByClassName("look_for")[0].innerText.search("Мыски"):
+		correct(3)
+        brea
+		
+    case document.getElementsByClassName("look_for")[0].innerText.search("Мыски"):
+		correct(obGorVr.Романовская)
         brea
 		
       default:
@@ -842,3 +846,8 @@ switch(0) {
 		
 		document.getElementsByClassName("look_for")[0].innerText = document.getElementsByClassName("look_for")[0].innerText + " " + (jamm) + '\:' + rop;
   }
+  
+  let obGorVr = {
+    "Романовская":-1,
+    "Самара":"bb"
+}
