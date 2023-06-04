@@ -112,7 +112,7 @@ switch(0) {
         break
                     
     case document.getElementsByClassName("look_for")[0].innerText.search("Новосибирск"):
-        correct(obGorVr.Новосибирск)
+        correct(obGorVr.nov)
         break
                       
     case document.getElementsByClassName("look_for")[0].innerText.search("Тула"):
@@ -849,6 +849,6 @@ switch(0) {
   
   let obGorVr = {
     "Романовская":-1,
-	"Новосибирск":3,
+	"nov":3,
     "Самара":"bb"
   }
