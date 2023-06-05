@@ -139,7 +139,7 @@ switch(a) {
 		correct(0)
         break
 
-    case "Нижний Новгород" || document.getElementsByClassName("look_for")[i].innerText.search("Нижний Новгород"):
+    case (a==0?document.getElementsByClassName("look_for")[i].innerText.search("Нижний Новгород"):"Нижний Новгород"):
 	console.log("ok1");
         correct(-1, -1)
         break
