@@ -140,6 +140,7 @@ switch(a) {
         break
 
     case "Нижний Новгород" || document.getElementsByClassName("look_for")[i].innerText.search("Нижний Новгород"):
+	console.log("ok1");
         correct(-1, -1)
         break
         
