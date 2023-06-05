@@ -12,6 +12,7 @@ if(document.getElementsByClassName("user-town")[0]){
 	}
 }else{
 	asasasx(0);
+	console.log("ok");
 	return;
 }
 	
@@ -870,8 +871,10 @@ switch(a) {
 		}
   }
   
+  /*
   let obGorVr = {
     "Романовская":-1,
 	"Новосибирск":3,
     "Самара":"bb"
   }
+  */
