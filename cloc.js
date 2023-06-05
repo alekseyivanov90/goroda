@@ -6,7 +6,18 @@ if(Tm.getMinutes() < 10){
 	rop = Tm.getMinutes();
 }
 
-switch(0) {
+if(document.getElementsByClassName("user-town")[0]){
+	for(i=0; i<document.getElementsByClassName("user-town").length; i++){
+		asasasx(document.getElementsByClassName("user-town")[i].innerText);
+	}
+}else{
+	asasasx(0);
+	return;
+}
+	
+
+function asasasx(a){
+switch(a) {
     case document.getElementsByClassName("look_for")[0].innerText.search("Лучегорск"):
         correct(6)
        break
@@ -112,7 +123,7 @@ switch(0) {
         break
                     
     case document.getElementsByClassName("look_for")[0].innerText.search("Новосибирск"):
-        correct(obGorVr.nov)
+        correct(3)
         break
                       
     case document.getElementsByClassName("look_for")[0].innerText.search("Тула"):
@@ -127,8 +138,8 @@ switch(0) {
 		correct(0)
         break
 
-    case document.getElementsByClassName("look_for")[0].innerText.search("Нижний Новгород"):
-        correct(-1)
+    case document.getElementsByClassName("user-town")[0] || document.getElementsByClassName("look_for")[i].innerText.search("Нижний Новгород"):
+        correct(-1, -1)
         break
         
     case document.getElementsByClassName("look_for")[0].innerText.search("Иркутск"):
@@ -835,20 +846,32 @@ switch(0) {
       // aas
       break
   }
+}
   
-  function correct(c){
+  function correct(c, d){
 	  
-	    jamm = Tm.getHours() + c
+	    if(d){
+			
+			jamm = Tm.getHours() + c
+		
+			if(jamm > 23){
+				jamm = jamm - 24
+			}
+			document.getElementsByClassName("user-town")[0].innerText = document.getElementsByClassName("user-town")[0].innerText + " " + + (jamm) + '\:' + rop;
+		}else{
+		
+		jamm = Tm.getHours() + c
 		
         if(jamm > 23){
             jamm = jamm - 24
         }
 		
 		document.getElementsByClassName("look_for")[0].innerText = document.getElementsByClassName("look_for")[0].innerText + " " + (jamm) + '\:' + rop;
+		}
   }
   
   let obGorVr = {
     "Романовская":-1,
-	"nov":3,
+	"Новосибирск":3,
     "Самара":"bb"
   }
