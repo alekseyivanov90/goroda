@@ -13,7 +13,7 @@ if(document.getElementsByClassName("user-town")[0]){
 }else{
 	asasasx(0);
 	console.log("ok");
-	return;
+	
 }
 	
 
