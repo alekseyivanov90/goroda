@@ -15,9 +15,7 @@ if(document.getElementsByClassName("user-town")[0]){
 	console.log("ok");
 	
 }
-	
 
-function asasasx(a){
 switch(a) {
     case document.getElementsByClassName("look_for")[0].innerText.search("Лучегорск"):
         correct(6)
@@ -139,8 +137,7 @@ switch(a) {
 		correct(0)
         break
 
-    case (a==0?document.getElementsByClassName("look_for")[0].innerText.search("Нижний Новгород"):"Нижний Новгород"):
-	console.log("ok1");
+    case document.getElementsByClassName("look_for")[0].innerText.search("Нижний Новгород"):
         correct(-1, -1)
         break
         
@@ -848,7 +845,6 @@ switch(a) {
       // aas
       break
   }
-}
   
   function correct(c, d){
 	  
