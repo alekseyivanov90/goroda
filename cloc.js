@@ -6,16 +6,6 @@ if(Tm.getMinutes() < 10){
 	rop = Tm.getMinutes();
 }
 
-if(document.getElementsByClassName("user-town")[0]){
-	for(i=0; i<document.getElementsByClassName("user-town").length; i++){
-		asasasx(document.getElementsByClassName("user-town")[i].innerText);
-	}
-}else{
-	asasasx(0);
-	console.log("ok");
-	
-}
-
 switch(a) {
     case document.getElementsByClassName("look_for")[0].innerText.search("Лучегорск"):
         correct(6)
