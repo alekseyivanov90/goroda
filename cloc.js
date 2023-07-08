@@ -828,7 +828,11 @@ switch(0) {
         brea
 		
     case document.getElementsByClassName("look_for")[0].innerText.search("Романовская"):
-		correct(obGorVr.Романовская)
+		correct(-1)
+        brea
+		
+    case document.getElementsByClassName("look_for")[0].innerText.search("Ленинградская"):
+		correct(-1)
         brea
 		
       default:
