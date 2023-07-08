@@ -6,7 +6,7 @@ if(Tm.getMinutes() < 10){
 	rop = Tm.getMinutes();
 }
 
-switch(a) {
+switch(0) {
     case document.getElementsByClassName("look_for")[0].innerText.search("Лучегорск"):
         correct(6)
        break
