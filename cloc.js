@@ -128,7 +128,7 @@ switch(0) {
         break
 
     case document.getElementsByClassName("look_for")[0].innerText.search("Нижний Новгород"):
-        correct(-1, -1)
+        correct(-1)
         break
         
     case document.getElementsByClassName("look_for")[0].innerText.search("Иркутск"):
