@@ -227,6 +227,10 @@ function reEnRu(str) {
 	        masE[i] = "ю";
 	        break;
 			
+			case "&":
+	        masE[i] = "?";
+	        break;
+			
 			default:
 			masE[i] = masR[i];
 			break;
