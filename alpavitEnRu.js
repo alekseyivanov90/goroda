@@ -185,6 +185,48 @@ function reEnRu(str) {
 	        masE[i] = "я";
 	        break;
 			
+			case "{":
+	        masE[i] = "Х";
+	        break;
+	        case "[":
+	        masE[i] = "х";
+	        break;
+			
+			case "}":
+	        masE[i] = "Ъ";
+	        break;
+	        case "]":
+	        masE[i] = "ъ";
+	        break;
+			
+			case ":":
+	        masE[i] = "Ж";
+	        break;
+	        case ";":
+	        masE[i] = "ж";
+	        break;
+			
+			case `"`:
+	        masE[i] = "Э";
+	        break;
+	        case "'":
+	        masE[i] = "э";
+	        break;
+			
+			case "<":
+	        masE[i] = "Б";
+	        break;
+	        case ",":
+	        masE[i] = "б";
+	        break;
+			
+			case ">":
+	        masE[i] = "Ю";
+	        break;
+	        case ".":
+	        masE[i] = "ю";
+	        break;
+			
 			default:
 			masE[i] = masR[i];
 			break;
