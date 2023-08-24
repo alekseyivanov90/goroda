@@ -4,10 +4,10 @@ function reEnRu(str) {
     for(i=0; i<masR.length; i++){
         switch(masR[i]){
 	        case "A":
-	        masE[i] = "Й";
+	        masE[i] = "Ф";
 	        break;
 	        case "a":
-	        masE[i] = "й";
+	        masE[i] = "ф";
 	        break;
 	      
 	        case "B":
